@@ -8,7 +8,7 @@ namespace WebApi.BookOperations.GetById{
 
     public class GetById{
         private readonly BookStoreDbContext _dbContext;
-        public int Id;
+        public int Id { get; set; }
 
         public GetById(BookStoreDbContext dbContext)
         {
